@@ -1,4 +1,4 @@
-## Exercice 1. Adressage IP (rappels)
+# Exercice 1. Adressage IP (rappels)
 | Name  | Hosts Needed | Hosts Available | Unused Hosts | Network Address | Slash | Mask            | Usable Range                | Broadcast    |
 |-------|--------------|-----------------|--------------|-----------------|-------|-----------------|-----------------------------|--------------|
 | Host1 | 52           | 62              | 10           | 172.16.0.0      | /26   | 255.255.255.192 | 172.16.0.1 - 172.16.0.62    | 172.16.0.63  |
@@ -9,7 +9,7 @@
 | Host6 | 33           | 62              | 29           | 172.16.1.64     | /26   | 255.255.255.192 | 172.16.1.65 - 172.16.1.126  | 172.16.1.127 |
 | Host7 | 25           | 30              | 5            | 172.16.1.128    | /27   | 255.255.255.224 | 172.16.1.129 - 172.16.1.158 | 172.16.1.159 |
 
-## Exercice 2. Préparation de l’environnement
+# Exercice 2. Préparation de l’environnement
 1/ Ajout d'une interface réseau sur la machine serveur, dont une dans le VLAN ICS_54, même VLAN que la carte réseau de la machine client.  
 
 2/L'interface lo représente le lootback.
@@ -20,7 +20,7 @@
 4/![hostname](Capture%20d’écran%202022-09-29%20135249.jpg)
 
 
-## Exercice 3. Installation du serveur DHCP
+# Exercice 3. Installation du serveur DHCP
 1/ ![isc](Capture%20d’écran%202022-09-29%20140649.jpg)
 
 2/ ![ipfixe](Capture%20d’écran%202022-09-29%20143723.jpg)
@@ -65,7 +65,7 @@ Du client vers le serveur :
 
 10/![](Capture%20d’écran%202022-09-29%20152150.jpg)
 
-## Exercice 4. Donner un accès à Internet au client.
+# Exercice 4. Donner un accès à Internet au client.
 
 1/
 ```bash
@@ -85,3 +85,7 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
 rtt min/avg/max/mdev = 8.436/8.496/8.614/0.082 ms
 ```
+
+# Exercice 5. Installation du serveur DNS
+
+
