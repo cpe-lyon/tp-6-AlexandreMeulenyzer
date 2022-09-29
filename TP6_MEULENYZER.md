@@ -88,4 +88,77 @@ rtt min/avg/max/mdev = 8.436/8.496/8.614/0.082 ms
 
 # Exercice 5. Installation du serveur DNS
 
+1/
+```bash
+User@tpadmin:~$ systemctl status bind9
+● named.service - BIND Domain Name Server
+     Loaded: loaded (/lib/systemd/system/named.service; enabled; vendor pres>     Active: active (running) since Thu 2022-09-29 13:53:50 UTC; 2min 13s ago       Docs: man:named(8)
+    Process: 3462 ExecStart=/usr/sbin/named $OPTIONS (code=exited, status=0/>   Main PID: 3463 (named)
+      Tasks: 6 (limit: 1631)
+     Memory: 8.0M
+        CPU: 109ms
+     CGroup: /system.slice/named.service
+             └─3463 /usr/sbin/named -u bind
+```
+3/
+```bash
+User@tpadmin:~$ ping google.com
+PING google.com (216.58.206.238) 56(84) bytes of data.
+64 bytes from par10s34-in-f14.1e100.net (216.58.206.238): icmp_seq=1 ttl=111 time=8.50 ms
+64 bytes from par10s34-in-f14.1e100.net (216.58.206.238): icmp_seq=2 ttl=111 time=8.54 ms
+64 bytes from par10s34-in-f14.1e100.net (216.58.206.238): icmp_seq=3 ttl=111 time=8.64 ms
+^C
+--- google.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 8.502/8.562/8.642/0.058 ms
+```
 
+4/
+```bash
+#                                  Wikipédia, l'encyclopédie libre (p1 of 19)   #alternate Images du jour de Wikipédia Flux d’articles en vedette de
+   Wikipédia Regards sur l'actualité de la Wikimedia, et d'ailleurs
+   Wikimag Wikipédia (fr)
+
+   Aller au contenu
+   [ ]
+
+   Afficher / masquer la barre latérale Wikipédia l'encyclopédie libre
+   Rechercher
+   ____________________ Rechercher Lire
+
+     * Créer un compte
+
+   [ ] Outils personnels
+   Créer un compte
+   Se connecter
+
+   Pages pour les contributeurs déconnectés en savoir plus
+     * Discussion
+     * Contributions
+
+   Navigation
+     * Accueil
+     * Portails thématiques
+     * Article au hasard
+     * Contact
+
+   Contribuer
+     * Débuter sur Wikipédia
+     * Aide
+     * Communauté
+     * Modifications récentes
+     * Faire un don
+
+   Outils
+     * Pages liées
+(NORMAL LINK) Use right-arrow or <return> to activate.
+  Arrow keys: Up and Down to move.  Right to follow a link; Left to go back.
+ H)elp O)ptions P)rint G)o M)ain screen Q)uit /=search [delete]=history list
+ ```
+ # Exercice 6. Configuration du serveur DNS pour la zone tpadmin.local
+
+2/
+```bash
+User@tpadmin:~$ sudo cp /etc/bind/db.local /etc/bind/db.tpadmin.local
+```
+3/
