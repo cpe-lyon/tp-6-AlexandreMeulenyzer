@@ -34,5 +34,20 @@ deuxieme ligne : temps max du bail (600 secondes)
 
 5/![service](Capture%20d’écran%202022-09-29%20145157.jpg)
 
+7/
+```bash
+Sep 29 13:02:37 tpadmin dhcpd[2375]: DHCPDISCOVER from 00:50:56:89:bf:bc via ens192
+Sep 29 13:02:38 tpadmin dhcpd[2375]: DHCPOFFER on 192.168.100.100 to 00:50:56:89:bf:bc via ens192
+Sep 29 13:02:38 tpadmin dhcpd[2375]: DHCPREQUEST for 192.168.100.100 (192.168.100.1) from 00:50:56:89:bf:bc via ens192
+Sep 29 13:02:38 tpadmin dhcpd[2375]: DHCPACK on 192.168.100.100 to 00:50:56:89:bf:bc via ens192
+```
+DHCPDiscover correspond a la demande en broadcast d'une adresse IP pour le client.  
 
+DHCPoffer correspond a la réponse du serveur au client en unicast,  elle contient une proposition contient l’adresse IP du serveur, l’adresse IP et le masque de sous-réseau, proposées au client.  
+
+DHCPRequest contient l’adresse IP du serveur ayant répondu ainsi que l’adresse qui lui a été fourni précédemment. Cela a pour but de renseigné au serveur que l'adresse IP est maintenant fourni, et donc de ne pas envoyé la même a un autre client.  
+
+DHCPACK fixe l’adresse IP et son masque de sous-réseau au client ainsi que la durée du bail de cette adresse
+
+8/!
 
