@@ -30,5 +30,9 @@ la durée de bail DHCP est la durée en minutes ou en secondes pendant laquelle 
 première ligne : temps par défaut du bail (120 secondes)
 deuxieme ligne : temps max du bail (600 secondes)
 
-4/
+4/![écoute](Capture%20d’écran%202022-09-29%20145023.jpg)
+
+5/![service](Capture%20d’écran%202022-09-29%20145157.jpg)
+
+
 
