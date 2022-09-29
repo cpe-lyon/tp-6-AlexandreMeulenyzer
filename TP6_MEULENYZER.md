@@ -49,5 +49,17 @@ DHCPRequest contient l’adresse IP du serveur ayant répondu ainsi que l’adre
 
 DHCPACK fixe l’adresse IP et son masque de sous-réseau au client ainsi que la durée du bail de cette adresse
 
-8/!
+8/Le fichier contient les différents adresse IP donnée par le serveur aux clients.  
+La commande dhcp-lease-list donne les adresses IP actuellement utilisé par des clients sur le réseau donné par le serveur DHCP.
+
+9/ Oui les deux machines peuvent communiqué entre elles :
+Du serveur vers le client
+```bash
+ping 192.168.100.100
+PING 192.168.100.100 (192.168.100.100) 56(84) bytes of data.
+64 bytes from 192.168.100.100: icmp_seq=1 ttl=64 time=0.220 ms
+```
+
+Du client vers le serveur :
+![ping](Capture%20d’écran%202022-09-29%20151714.jpg)
 
