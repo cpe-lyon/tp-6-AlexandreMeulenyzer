@@ -63,3 +63,25 @@ PING 192.168.100.100 (192.168.100.100) 56(84) bytes of data.
 Du client vers le serveur :
 ![ping](Capture%20d’écran%202022-09-29%20151714.jpg)
 
+10/![](Capture%20d’écran%202022-09-29%20152150.jpg)
+
+## Exercice 4. Donner un accès à Internet au client.
+
+1/
+```bash
+User@tpadmin:~$ sysctl net.ipv4.ip_forward
+net.ipv4.ip_forward = 1
+```
+
+2/ 
+```bash
+User@tpadmin:~$ ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=112 time=8.61 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=112 time=8.44 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=112 time=8.44 ms
+^C
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 8.436/8.496/8.614/0.082 ms
+```
