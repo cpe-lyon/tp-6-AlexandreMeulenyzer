@@ -23,4 +23,6 @@
 ## Exercice 3. Installation du serveur DHCP
 1/ ![isc](Capture%20d’écran%202022-09-29%20140649.jpg)
 
-2/
+2/ ![ipfixe](Capture%20d’écran%202022-09-29%20143723.jpg)
+
+3/
