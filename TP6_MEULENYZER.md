@@ -26,3 +26,9 @@
 2/ ![ipfixe](Capture%20d’écran%202022-09-29%20143723.jpg)
 
 3/
+la durée de bail DHCP est la durée en minutes ou en secondes pendant laquelle un périphérique réseau peut utiliser une adresse IP dans un réseau. L'adresse IP est réservée pour cet appareil jusqu'à l'expiration de la réservation.
+première ligne : temps par défaut du bail (120 secondes)
+deuxieme ligne : temps max du bail (600 secondes)
+
+4/
+
