@@ -10,3 +10,17 @@
 | Host7 | 25           | 30              | 5            | 172.16.1.128    | /27   | 255.255.255.224 | 172.16.1.129 - 172.16.1.158 | 172.16.1.159 |
 
 ## Exercice 2. Préparation de l’environnement
+1/ Ajout d'une interface réseau sur la machine serveur, dont une dans le VLAN ICS_54, même VLAN que la carte réseau de la machine client.  
+
+2/L'interface lo représente le lootback.
+![lo](Capture%20d’écran%202022-09-29%20134334.jpg)
+
+3/![désinstall](Capture%20d’écran%202022-09-29%20134609.jpg)
+
+4/![hostname](Capture%20d’écran%202022-09-29%20135249.jpg)
+
+
+## Exercice 3. Installation du serveur DHCP
+1/ ![isc](Capture%20d’écran%202022-09-29%20140649.jpg)
+
+2/
